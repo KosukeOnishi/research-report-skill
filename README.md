@@ -21,7 +21,22 @@ Claude Codeに「〜について調べて」とお願いしたとき、こんな
 
 ## アウトプットイメージ
 
-![Sample Output](docs/sample_output.png)
+### 入力プロンプト
+
+```
+音楽史の偉大なアルバムジャケットについてリサーチレポートを作成して。
+各時代の代表的なジャケットと、そのデザインの特徴・影響を解説。
+画像付きで。
+```
+
+### 生成されるPDF
+
+<p align="center">
+  <img src="docs/output_01.png" width="24%" />
+  <img src="docs/output_02.png" width="24%" />
+  <img src="docs/output_03.png" width="24%" />
+  <img src="docs/output_04.png" width="24%" />
+</p>
 
 ---
 
