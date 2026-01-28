@@ -1,0 +1,15 @@
+# Virtual environment
+.venv/
+
+# Output files
+output/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Claude local files
+.claude/
+
+# OS files
+.DS_Store
