@@ -49,19 +49,10 @@ Claude Codeに「〜について調べて」とお願いしたとき、こんな
 /plugin install research-report@kosuke-plugins
 ```
 
-### 2. 依存パッケージをインストール
-
-```bash
-cd ~/.claude/plugins/cache/kosuke-plugins/research-report/1.0.0
-python -m venv .venv
-source .venv/bin/activate
-pip install weasyprint pillow requests
-```
-
-### 3. 使う
+### 2. 使う
 
 ```
-SKILL.md を読んで、[トピック]についてレポートを作成して
+2025年のUIトレンドについてリサーチレポートを作成して
 ```
 
 ---
