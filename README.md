@@ -40,49 +40,38 @@ Claude Codeに「〜について調べて」とお願いしたとき、こんな
 
 ---
 
+## Quick Start
+
+### 1. プラグインをインストール
+
+```bash
+/plugin marketplace add KosukeOnishi/research-report-skill
+/plugin install research-report@kosuke-plugins
+```
+
+### 2. 依存パッケージをインストール
+
+```bash
+cd ~/.claude/plugins/cache/kosuke-plugins/research-report/1.0.0
+python -m venv .venv
+source .venv/bin/activate
+pip install weasyprint pillow requests
+```
+
+### 3. 使う
+
+```
+SKILL.md を読んで、[トピック]についてレポートを作成して
+```
+
+---
+
 ## 機能
 
 - 🔍 **Webリサーチ**: 複数ソースから情報収集、一次ソース優先
 - 📊 **図表生成**: 棒グラフ、円グラフ、統計カード、比較表
 - 🖼️ **画像取得**: Web画像のダウンロード・最適化・選別
 - 📄 **PDF出力**: プロフェッショナルなレイアウト
-
----
-
-## 必要環境
-
-- Python 3.10+
-- Claude Code
-- Ralph Loop プラグイン（推奨）
-
----
-
-## セットアップ
-
-```bash
-cd research-report
-python -m venv .venv
-source .venv/bin/activate
-pip install weasyprint pillow requests
-```
-
----
-
-## 使い方
-
-### Claude Codeから直接実行
-
-```
-skills/research-report/SKILL.md を読んで、[トピック]についてレポートを作成して
-```
-
-### Ralph Loopで実行（推奨）
-
-```
-/ralph-loop:ralph-loop "
-skills/research-report/SKILL.md を読んで、[トピック]についてレポートを作成する
-" --completion-promise "SKILL_COMPLETE" --max-iterations 15
-```
 
 ---
 
