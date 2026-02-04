@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kosuke-plugins",
+  "description": "KosukeOnishiのClaude Codeプラグインコレクション",
+  "owner": {
+    "name": "KosukeOnishi"
+  },
+  "plugins": [
+    {
+      "name": "research-report",
+      "source": "./",
+      "description": "リサーチレポートPDF生成スキル。Webリサーチ→図表生成→PDF出力を自動化。",
+      "version": "1.0.0",
+      "author": {
+        "name": "KosukeOnishi"
+      }
+    }
+  ]
+}
